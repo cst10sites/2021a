@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 5</title>
+</head>
+<body>
+<h1>Bill Split Calculator</h1>
+
+<form id="form" onsubmit="return false;">
+	
+	<label>SubTotal:</label>
+	<input type="text" id="subtotal"><br><br>
+	
+    <label>Tip:</label><br>
+	<select id="tip">
+		<option value="0">No Tip 0%</option>
+		<option value="10">Average 10%</option>
+		<option value="15">Good 15%</option>
+		<option value="20">Excellent 20%</option>
+	</select><br><br>
+
+	<label>Split:</label><br>
+	<select id="split">
+		<option value="1">1 person</option>
+		<option value="2">2 people</option>
+		<option value="3">3 people</option>
+		<option value="4">4 people</option>
+		<option value="5">5 people</option>
+		<option value="6">6 people</option>
+	</select><br><br>
+	
+	<button type="submit" onclick="calculate()">Calculate</button>
+	<button type="reset">Clear</button>
+	
+</form><br>
+
+<h1 id="breakdown"></h1>
+<p id="subtotalDisplay"></p>
+<p id="taxDisplay"></p>
+<p id="totalAfterTax"></p>
+<p id="tipDisplay"></p>
+<p id="grandTotal"></p><br>
+<p id="splitDisplay"></p>
+
+<script>
+function calculate() {
+	var subFn = document.getElementById("subtotal").value;
+	var tipFn = document.getElementById("tip").value;
+	var splitFn = document.getElementById("split").value;
+	var grandTotalFn = subFn;
+
+	if (subFn == "") {
+	
+		alert("Please enter a subtotal");
+		return;
+	}
+	if (!isNaN(parseInt(subFn)))
+	{
+		document.getElementById("breakdown").innerHTML = "Breakdown: ";
+		document.getElementById("subtotalDisplay").innerHTML = "SubTotal: <em>$" + subFn + "</em>";
+		document.getElementById("taxDisplay").innerHTML = "Tax: <em>5%</em>";
+		var totalAfterTax = parseInt(subFn) + (subFn * 0.05);
+		document.getElementById("totalAfterTax").innerHTML = "Total after Tax: <em>$" + totalAfterTax + "</em>";
+		document.getElementById("tipDisplay").innerHTML = "Tip: <em>$" + (subFn * (tipFn / 100)) + " (" + tipFn + "%)</em>";
+		if (tipFn > 1) {
+			grandTotalFn = totalAfterTax + (totalAfterTax * (tipFn / 100));
+		}
+		else {
+			grandTotalFn = totalAfterTax;
+		}
+	
+		document.getElementById("grandTotal").innerHTML = "Grand Total: <em>$" + grandTotalFn + "</em>";
+		document.getElementById("splitDisplay").innerHTML = "Split between " + splitFn + " person(s): " + "<em>$" + (grandTotalFn / splitFn) + " Per person</em>";
+	}
+	else {
+		alert("Please enter a valid subtotal")
+		return;
+	}
+}
+
+
+</script>
+
+</body>
+</html>

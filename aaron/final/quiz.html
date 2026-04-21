@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arctic Wolf: Quiz</title>
+    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/animalist/32/animal_32-02-512.png" type="image/icon type">
+    <link rel="stylesheet" href="quiz.css">
+    <script type="text/javascript" src="quiz.js"></script>
+</head>
+<body>
+    <!--NavBar Start-->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="habitat.html">Habitat</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a class="active" href="quiz.html">Quiz</a></li>
+    </ul>
+    <!--NavBar End-->
+    
+    <div class="positioning">
+        <h1>Arctic Wolf Quiz</h1>
+        <br>
+        <img width="40%" src="https://i.pinimg.com/originals/3e/08/28/3e082861160deaffee67ce2834856be1.jpg" alt="Arctic Wolf Quiz">
+        <br><br>
+            <form id="quiz">
+                <div>
+                    <h3>1. Where do Arctic Wolves live?</h3>
+                    <p><input type="radio" name="question1" value="Arctic">A. The Arctic Regions</p>
+                    <p><input type="radio" name="question1" value="America">B. America</p>
+                    <p><input type="radio" name="question1" value="Sahara">C. Sahara Desert</p>
+
+                </div>
+                <div>
+                    <br><br>
+                    <h3>2. How many Arctic Wolves are in a pack?</h3>
+                    <p><input type="radio" name="question2" value="3">A. 3 - 7</p>
+                    <p><input type="radio" name="question2" value="20">B. 20 - 60</p>
+                    <p><input type="radio" name="question2" value="5">C. 5 - 20</p>
+                    
+                </div>
+                <div>
+                    <br><br>
+                    <h3>3. How old do pups have to be to join the pack?</h3>
+                    <p><input type="radio" name="question3" value="5">A. 5 months old</p>
+                    <p><input type="radio" name="question3" value="3">B. 3 months old</p>
+                    <p><input type="radio" name="question3" value="2">C. 2 months old</p>
+
+                </div>
+
+                <div>
+                    <br><br>
+                    <h3>4. Which of the following is true?</h3>
+                    <p><input type="radio" name="question4" value="fur">A. Arctic Wolves have one layer of thick fur that is waterproof</p>
+                    <p><input type="radio" name="question4" value="ear">B. Arctic Wolves have larger ears to hear prey better under the snow</p>
+                    <p><input type="radio" name="question4" value="paw">C. Arctic Wolves have fur on their paws to grip the ice better.</p>
+
+                </div>
+                <div>
+                    <br><br>
+                    <h3>5. True or False? Arctic Wolves can weight up to 125 pounds</h3>
+                    <p><input type="radio" name="question5" value="fur">A. True</p>
+                    <p><input type="radio" name="question5" value="ear">B. False</p>
+
+                </div>
+                <br>
+                <input class="finished" type="button" name="" value="Finished" onclick="check()">
+                <br><br><br>
+                <div class="results">
+                    <p id="results"></p>
+                    <p id="message"></p>
+                </div>
+
+            </form>
+        <br><br><br>
+    </div>
+
+</body>
+</html>

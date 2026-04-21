@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="index.css">
+
+<title>a5-Tipcalculator</title>
+
+
+</head>
+
+
+
+
+
+
+
+
+<body>
+<p></p>
+<h1>Tip Calculator</h1>
+<form id="form" onsubmit="return false;">
+
+<label>Subtotal:</label><br>
+<input type="text" id="sTotal"><br>
+<p id="GST">+ GST(5%)</p>
+<p id="totalATX">After Tax Total:</p>
+<br>
+
+
+<label>Tip</label><br>
+	<select id="tipAmount">
+	<option value="1">No Tip</option>
+	<option value="1.10">Average</option>
+	<option value="1.15">Good</option>
+	<option value="1.20">Excellent</option>
+	</select>
+	<p id="totalAT"> Total After Tip:</p>
+	<br>
+	
+	
+	<label>Split</label><br>
+		<select id="splitAmount">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		</select>
+		<p id="totalG">After Split:</p>
+		<br>
+		<br>
+		
+<input type="submit" onclick="clickedOk()">
+<input type="reset" onclick="clickedreset()">
+
+
+
+<script src="index.js"> 
+</script>
+
+
+</form>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>

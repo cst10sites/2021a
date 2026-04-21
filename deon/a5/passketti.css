@@ -1,0 +1,14 @@
+body {
+		background-color: PeachPuff;
+		color: Black;
+		text-align: center;
+		margin: 75px;
+}
+
+h1 {
+		color: CornflowerBlue;
+}
+
+button, input, select {
+		border-style: dotted;
+}

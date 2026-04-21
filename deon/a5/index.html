@@ -1,0 +1,45 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tip Calculator</title>
+<link rel="stylesheet" href="passketti.css">
+<script src="cal.js"></script>
+</head>
+<body>
+<h1>Tip Calculator</h1>
+<form id="form" onsubmit="return false;">
+	<label>Subtotal (without GST)</label><br>
+	<input type="number" id="subtotal"><br><br>
+	<label>How much would you like to tip?</label><br>
+	<input type="radio" id="tip1" name="tip" value="0">
+	 <label for="tip1">0%</label>
+    <input type="radio" id="tip2" name="tip" value="10">
+	 <label for="tip2">10%</label>
+	<input type="radio" id="tip3" name="tip" value="15">
+	 <label for="tip3">15%</label>
+	<input type="radio" id="tip4" name="tip" value="20">
+	 <label for="tip4">20%</label><br>
+	</select><br>
+	<label>How many people do you have?</label><br>
+	<select id="people">
+		<option value="1">1 person</option>
+		<option value="2">2 people</option>
+		<option value="3">3 people</option>
+		<option value="4">4 people</option>
+		<option value="5">5 people</option>
+		<option value="6">6 people</option>
+	</select><br>
+	<br>
+	<button type="button" onclick="clickedSubmit();">Calculate</button>
+<p id="receiptSub"></p>
+<p id="receiptGstP"></p>
+<p id="receiptGst"></p>
+<p id="receiptBefore"></p>
+<p id="receiptTipP"></p>
+<p id="receiptTip"></p>
+<p id="receiptGrand"></p>
+<p id="receiptSplit"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+ <title>Sphagetti!</title>
+  <link rel="stylesheet" href="pass.css">
+ <style type="text/css">
+* {
+  box-sizing: border-box;
+}
+/* I have copied the following from W3School mostly with some modifications */
+
+body {
+  background-color: rgb(255, 69, 49);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FFD700;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a class="active" href="SpaghettiHistory.html">History</a>
+  <a href="SpaghettiProsAndCons.html">Pros and Cons</a>
+  <a href="SpaghettiTop10Types.html">Top 3</a>
+  <a href="SpaghettiNews.html">Receipes</a>
+</div>
+<div class="main">
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>~1500 B.C</h2>
+      <p>Noodles were invented</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>0 B.C</h2>
+      <p>Easter was invented</p>
+    </div>
+  </div>
+
+	<div class="container left">
+     <div class="content">
+      <h2>1271</h2>
+      <p>Marco polo went to china</p>
+     </div>
+    </div>
+	<div class="container right">
+     <div class="content">
+      <h2>~1300</h2>
+      <p>Spaghetti became popular across italy</p>
+     </div>
+    </div>
+	<div class="container left">
+     <div class="content">
+      <h2>~1600</h2>
+      <p>Spaghetti wa spread to the new world</p>
+     </div>
+    </div>
+	<div class="container right">
+     <div class="content">
+      <h2>~1750</h2>
+      <p>Tomato sauce was invented</p>
+     </div>
+    </div>
+	<div class="container left">
+     <div class="content">
+      <h2>1870</h2>
+      <p>Writing of spaghetti and tomato juice ware recorded in the 1790 cookbook “L'Apicio Moderno” by Italian chef Francesco Leonardi</p>
+     </div>
+    </div>
+	<div class="container right">
+     <div class="content">
+      <h2>~1900</h2>
+      <p>Spaghetti became well known in entire Italy. Arrival of pasta factories enabled it to spread all across the Mediterranean.</p>
+     </div>
+    </div>
+	<div class="container left">
+     <div class="content">
+      <h2>~1900</h2>
+      <p>Spaghetti arrived in United States, where they were served in Italian restaurants</p>
+     </div>
+    </div>
+	<div class="container right">
+     <div class="content">
+      <h2>1870</h2>
+      <p>Writing of spaghetti and tomato juice were recorded in the 1790 cookbook “L'Apicio Moderno” by Italian chef Francesco Leonardi</p>
+     </div>
+    </div>
+	<div class="container left">
+     <div class="content">
+      <h2>2007</h2>
+      <p>Spiderman 3 with toby maguire was made</p>
+     </div>
+    </div>
+</div>
+</div>
+</body>

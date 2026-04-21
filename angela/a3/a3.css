@@ -1,0 +1,28 @@
+body {
+	
+	
+	background-color: beige;
+	color: Sienna;
+	margin: 100px 50px;
+}
+
+h1, h2{
+	color: Maroon;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	text-align: left;
+	padding: 3px;
+}
+
+table, th, td {
+	border:2px solid brown;
+}
+
+span {
+	color: red;
+}
