@@ -1,0 +1,14 @@
+body {
+		background-color: blanchedalmond;
+		color: coral;
+		text-align: center;
+		margin: 50px;
+}
+
+h1 {
+		color: crimson;
+}
+
+button, input, select {
+		border-style: outset;
+}

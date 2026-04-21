@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 5: Tip Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="index.js"></script>
+<h1><strong>Tip Calculator</strong></h1>
+<form id="form">
+	<h3>Subtotal For Food:</h3>
+	<input type="number" id="subTotal">
+	<br>
+	<em>+5%GST</em>
+	<br>
+	
+	
+	<h3>Tip (%):</h3>
+	<select id="tip">
+	<option value="">Please Select #</option>
+	<option value="0">0% - Terrible or No Service</option>
+	<option value="10">10% - average Service</option>
+	<option value="15">15% - Above Average Service</option>
+	<option value="20">20% - Excellent Service</option>
+	</select>
+	<br>
+	
+	
+	<h3>Amount Of People:</h3>
+	<select id="personAmt">
+	<option value="">Please Select #</option>
+	<option value="1">1 person</option>
+	<option value="2">2 person</option>
+	<option value="3">3 person</option>
+	<option value="4">4 person</option>
+	<option value="5">5 person</option>
+	<option value="6">6 person</option>
+	</select>
+	<br>
+	<br>
+	
+	<button type="button" onclick="clickedSubmit()">Find Total Bill</button>
+	<input type="reset" onclick="resetBill()">
+	
+	
+	<p id="billSub"></p>
+	<p id="billGst"></p>
+	<p id="billTipB"></p>
+	<p id="billTipAmt"></p>
+	<p id="billTtl"></p>
+	<p id="billSplit"></p>
+	
+
+</form>
+</body>
+</html>

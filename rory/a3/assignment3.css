@@ -1,0 +1,55 @@
+body {
+	background-color: darkslategray;
+	color: peachpuff;
+	margin; 100px 50px;
+}
+
+em, strong, code {
+	color: cyan;
+}
+
+h1 {
+	color: blueviolet;
+}
+
+h2 {
+	color: lawngreen;
+}
+
+h3 {
+	color: crimson;
+}
+
+h4 {
+	color: blue;
+}
+
+h5 {
+	color: mediumspringgreen;
+}
+
+h6 {
+	color: gold;
+}
+
+span {
+	color: orange;
+}
+ hr {
+	 color: peachpuff;
+ }
+ 
+ a {
+	 color: red;
+ }
+ 
+ table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}

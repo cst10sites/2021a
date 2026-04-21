@@ -1,0 +1,73 @@
+body {
+	background-image: url("https://th.bing.com/th/id/OIP.A9VOcVj2L_IHfUBSSAZwJwEsD8?w=249&h=199&c=7&o=5&dpr=1.25&pid=1.7");
+	background-color: white;
+	color: coral;
+	font-family: times new roman;
+}
+
+
+div.main {
+	font-size: 48px;
+	text-align: center; 
+	opacity: 0.92;
+	background-color: darkslategray;
+	margin: 5px 5px 50px 162px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+div.maintext {
+	text-align: center;
+	font-size: 21px;
+	opacity: 0.92;
+	background-color: darkslategray;
+	color: coral;
+	margin: 10px 10px 10px 162px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.sidenav {
+  width: 170px;
+  height: 100000px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  background: peachpuff;
+  overflow-x: hidden;
+  padding: 8px 0;
+  border: 1px black;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25.7px;
+  color: slategray;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: darkslategray;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {
+  padding: 5px;
+}
+
+table {
+margin-right: auto;
+margin-left: auto;
+}
+
+
+
+	

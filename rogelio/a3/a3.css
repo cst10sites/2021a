@@ -1,0 +1,14 @@
+body {
+	background-color: black;
+	margin: 100px 50px;
+	color: lightblue;
+	text-align: center;
+}
+
+h1 {
+	color: aquamarine;
+}
+
+table, th, td {
+	border: 1px inset silver
+}
