@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 1: About Me</title>
+</head>
+<body>
+<h1>About me (heading)</h1>
+<p>This is a paragraph. This is <em>another</em> sentence. </p>
+<p>This is <strong>another</strong> paragraph.</p>
+<!--This is a comment-->
+<h1>h1</h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<hr>
+<img style="width:20%" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Church%27s_Chicken_logo.svg/1200px-Church%27s_Chicken_logo.svg.png">
+<br> 
+<img style="width:200px" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Church%27s_Chicken_logo.svg/1200px-Church%27s_Chicken_logo.svg.png">
+<hr>
+<p>See <a target ="_blank" href="https://w3schools.com">w3schools.com</a> for more info!</p>

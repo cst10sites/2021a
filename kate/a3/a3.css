@@ -1,0 +1,21 @@
+table, tr, td, th {
+	padding: 15px;
+	border: 4px solid #d9b3ff;
+
+}
+table {
+	border-collapse: collapse;
+	
+	
+}
+
+body {
+	margin: 50px 50px;
+	background-color: black;
+	color: white;
+}
+
+span {
+	background-color: #1ab2ff;
+	color: black
+}

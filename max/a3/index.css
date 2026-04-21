@@ -1,0 +1,28 @@
+body {
+	
+	
+	background-color: DarkSlateBlue;
+	color: IndianRed;
+	margin: 100px 50px;
+}
+
+h1, h2{
+	color: IndianRed;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	text-align: left;
+	padding: 3px;
+}
+
+table, th, td {
+	border:2px solid Crimson;
+}
+
+span {
+	color: red;
+}

@@ -1,0 +1,19 @@
+body	{
+	background-color: darkkhaki;
+	color: blue;
+	font-family: Calibri;
+	margin: 100px 100px;
+}
+table	{
+	border-collapse: collapse;
+}
+th, td	{
+	text-align: left;
+	padding: 5px;
+}
+lable, td, th	{
+	border: 2px solid black;
+}
+span	{
+	color: purple;
+}

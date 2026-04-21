@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 5</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Restaurant Bill Calculator</h1>
+<h3>Fill out the form to calculate your bill</h3>
+<form id="form" onsubmit="return false;">
+    <label>Subtotal:</label><br>
+	<input type="text" id="SubTotal"><br>
+	<br />
+	<label>Tip:</label><br>
+	<select id="tipPercentage">
+		<option value="0">No Tip</option>
+		<option value="0.1">10%</option>
+		<option value="0.15">15%</option>
+		<option value="0.2">20%</option>
+	
+		
+	</select><br>
+	<br />
+	<label>Split:</label><br>
+	<select id="split">
+		<option value="1">1 person</option>
+		<option value="2">2 people</option>
+		<option value="3">3 people</option>
+		<option value="4">4 people</option>
+		<option value="5">5 people</option>
+		<option value="6">6 people</option>
+		
+	</select><br>
+
+	
+  
+	<br />
+	<input type="submit" onclick="clickedSubmit()">
+	<input type="reset">
+</form>
+
+<br />
+<h1 id="breakdownB"></h1>
+<h4 id="subtotalB"></h4> 
+<h4 id="taxB"></h4> 
+<h4 id="totalB"></h4> 
+<h4 id="TipB"></h4> 
+<h4 id="grandtotalB"></h4> 
+<h4 id="SplitB"></h4> 
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

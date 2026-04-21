@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Final Project</title>
+<link rel="stylesheet" href="style.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="https://assets.stickpng.com/images/585694ea4f6ae202fedf2736.png">
+</head>
+<body>
+<ul class="a">
+  <li class="a"><a class="active" href="index.html">Home</a></li>
+  <li class="a"><a href="monet.html">Claude Monet</a></li>
+  <li class="a"><a href="vanGogh.html">Vincent van Gogh</a></li>
+  <li class="a"><a href="daVinci.html">Leonardo da Vinci</a></li>
+</ul>
+<div id="main">
+<br />
+<div id="head">
+<h1>Famous Artists</h1>
+</div>
+<br />
+<div id="content">
+<div id="img">
+<h2><em><u>Intro</u></em></h2>
+
+
+<img name="slide" height="600" width="1000" >
+
+</div>
+<hr />
+<p>
+Painting. It was one of the first inventions. Traces of painting have been found 
+in caves from over 40,000 years ago. Before, colourful rocks, bones,and minerals were 
+ground into powder in order to make a pigment. Then mixed with egg, or animal byproducts 
+to bind them together to get paint. Now however, the pigments are mostly synthetic.
+</p>
+<p>
+There are many differnt types of paints, but the three main ones are oil, acrylics, and 
+watercolours. Many famous artists such as Leonardo da Vinci, Claude Monet and Vincent van Gogh used oil 
+paints for their paintings. 
+</p>
+
+<script>
+	var i = 0; //start point
+	var images = [];
+	var time = 3000;
+	
+	//image list
+	images[0] = 'https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2MzU4MjUzMDA4MDcwMzE4/portrait-of-leonardo-da-vinci-1452-1519-getty.jpg';
+	images[1] = 'claudemonet.jpg';
+	images[2] = 'https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTY2NTIzMzc4MTI2MDM4MjM5/vincent_van_gogh_self_portrait_painting_musee_dorsay_via_wikimedia_commons_promojpg.jpg';
+
+	//change image
+	function changeImg (){
+		document.slide.src = images[i];
+	
+	if(i < images.length -1){
+		i++;
+	}
+	else {
+	i = 0;
+	}
+	setTimeout("changeImg()", time);
+	} 
+	window.onload = changeImg
+</script>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Assignement 5: Restaurant Bill Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Restaurant Bill Splitting Calculator</h1>
+
+<em>enter the following information for the calculator to take aciton:</em>
+
+<br></br>
+
+<form id="form" onsubmit="return false;">
+	
+	<label>SubTotal:</label>
+	<br>
+	<input type="text" id="SubTotal">
+	<br></br>
+	
+	<label>Tip:</label>
+	<br>
+	<select id="tip">
+		<option value="0">0% tip (no tip)</option>
+		<option value="0.10">10% tip (Average)</option>
+		<option value="0.15">15% tip (Good)</option>
+		<option value="0.20">20% tip (Excellent)</option>
+	</select>
+	</br>
+	
+	
+	<br></br>
+	
+	
+	<label>Split:</label>
+	<br>
+	<select id="split">
+		<option value="1">1 person</option>
+		<option value="2">2 people</option>
+		<option value="3">3 people</option>
+		<option value="4">4 people</option>
+		<option value="5">5 people</option>
+		<option value="6">6 people</option>
+	</select>
+	</br>
+
+	<br></br>
+	
+	<input type="submit" onclick="clickedSubmit()">
+	<input type="reset">
+	
+</form>
+
+<br />
+<h2 id="breakdown"></h2>
+<h5 id="subtotal"></h5> 
+<h5 id="tax"></h5> 
+<h5 id="total"></h5> 
+<h5 id="Tip"></h5> 
+<h5 id="grandtotal"></h5> 
+<h4 id="Split"></h4> 
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

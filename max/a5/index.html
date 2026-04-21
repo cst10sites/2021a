@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bill Splitter A5</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Restaurant Bill Splitter</h1>
+<h3>Fill in the blanks to calculate your bill</h3>
+<form id="form" onsubmit="return false;">
+    <label>Subtotal:</label><br>
+	<input type="text" id="SubTotal"><br>
+	<br />
+	<label>Tip</label><br>
+	<select id="tipPercentage">
+		<option value="0">No Tip 0%</option>
+		<option value="0.1">10% Tip</option>
+		<option value="0.15">15% Tip</option>
+		<option value="0.2">20% Tip</option>
+	
+		
+	</select><br>
+	<br />
+	<label>Split</label><br>
+	<select id="split">
+		<option value="1">1 person</option>
+		<option value="2">2 people</option>
+		<option value="3">3 people</option>
+		<option value="4">4 people</option>
+		<option value="5">5 people</option>
+		<option value="6">6 people</option>
+		
+	</select><br>
+
+	
+  
+	<br />
+	<input type="submit" onclick="clickedSubmit()">
+	<input type="reset">
+</form>
+
+<br />
+<h1 id="breakdownB"></h1>
+<h3 id="subtotalB"></h3> 
+<h3 id="taxB"></h3> 
+<h3 id="totalB"></h3> 
+<h3 id="TipB"></h3> 
+<h3 id="grandtotalB"></h3> 
+<h3 id="SplitB"></h3> 
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,103 @@
+body {
+	background: url('https://images.pexels.com/photos/1109354/pexels-photo-1109354.jpeg?cs=srgb&dl=pexels-steve-johnson-1109354.jpg&fm=jpg');
+	background-repeat:no-repeat;
+	background-position: top-left;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+#main {
+	width: 1200px;
+	margin: auto;
+	
+}
+#head {
+	width: 1200px;
+	text-align:center;
+	border: 5px outset #7179eb;
+	background-color: #faf0d7;
+	margin: auto;
+}
+#content {
+	width: 1200px;
+	border: 5px outset #7179eb;
+	background-color: #faf0d7;
+
+}
+#content2 {
+	border: 5px outset #7179eb;
+	background-color: #faf0d7;
+	height: 1000px;
+	width: 1200px;
+}
+#content3 {
+	border: 5px outset #7179eb;
+	background-color: #faf0d7;
+	height: 1150px;
+	width: 1200px;
+}
+
+#content4 {
+	border: 5px outset #7179eb;
+	background-color: #faf0d7;
+	height: 1350px;
+	width: 1200px;
+}
+
+
+#img {
+	text-align: center;
+}
+#facts {
+	text-align: center;
+}
+	
+p {
+	margin: 35px;
+	text-align: left;
+}
+
+img {
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+
+}
+	
+ul.a {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li.a {
+	float: left;
+}
+
+li.a a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li.a a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #7179eb;
+}
+
+iframe {
+	border: 5px outset #7179eb;
+	margin: 30px;
+	float: right;
+}
+	
+	
+	
+	

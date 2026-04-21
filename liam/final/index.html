@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Final Project </title>
+
+<link rel="stylesheet" href="index.css">
+
+ <link rel="shortcut icon" type="image/x-icon" href="https://www.favicon.cc/logo3d/574280.png">
+</head>
+
+<body style= "background-image:  url('https://sjvsun.com/wp-content/uploads/2020/01/SUNP-Pistachios-1024x536.png');">
+
+<div class="topnav">
+  <a  href="#home">Home</a>
+  <a href="history.html">History</a>
+  <a href="cultivation.html">Cultivation</a>
+  <a href="toxin_safety.html">Toxin and safety concerns</a>
+  
+</div>
+
+<section>
+  <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Feuilles_de_pistachier.jpg/440px-Feuilles_de_pistachier.jpg" alt="Pistachio leaves"
+  style="width:100%">
+  <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/860631-Pistachio-IMG_6862-2.jpg/440px-860631-Pistachio-IMG_6862-2.jpg" alt="Pistachio fruit"
+  style="width:100%">
+</section>
+
+<div style="padding:50px; text-align:center;">
+  <h2>Pistachios</h2>
+  <p>
+  
+The pistachio, a member of the cashew family, is a small tree originating from Central Asia and the Middle East. The tree produces seeds that are widely consumed as food. Pistachio is a desert plant and is highly tolerant of saline soil.  Pistachio trees are fairly hardy in the right conditions and can survive temperatures ranging between −10 °C (14 °F) in winter and 48 °C (118 °F) in summer. They need a sunny position and well-drained soil. Pistachio trees do poorly in conditions of high humidity and are susceptible to root rot in winter if they get too much water and the soil is not sufficiently free-draining. Long, hot summers are required for proper ripening of the fruit.  </p>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+
+</script>
+</body>
+</html>
